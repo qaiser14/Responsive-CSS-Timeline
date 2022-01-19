@@ -1,0 +1,205 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+    font-family: Arial, sans-serif;
+    background: #e9f0f5;
+
+}
+
+p{
+
+    margin: 10px 0;
+}
+
+.container{
+
+    width: 940px;
+    overflow: auto;
+    margin: auto;
+}
+
+header{
+
+    background: #5e6482;
+    height: 70px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#timeline{
+
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/line.png?raw=true) repeat-y 50% 0; 
+    min-height: 700px;
+    margin: 20px 0;
+    padding-top: 10px;
+
+}
+
+.t1-block{
+
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.t1-year{
+
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-big.png?raw=true) repeat-y 50% 0; 
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.t1-year div{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.t1-event{
+
+    background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-small.png?raw=true) no-repeat 50% 0; 
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+    animation: fade;
+    animation-duration: 3s;
+
+}
+
+@keyframes fade{
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.t1-event > div{
+
+    width: 45%;
+    position: relative;
+
+}
+
+.t1-event div div{
+
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.t1-event div.event-r{
+
+    float: right;
+    background:  url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-left.png?raw=true) no-repeat 0 0; 
+}
+
+.t1-event div.event-1{
+
+    float: left;
+    background:  url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-right.png?raw=true) no-repeat top right; 
+}
+
+.t1-event div.event-r div{
+
+    margin-left: 20px;
+    
+} 
+
+.t1-event div.event-r div{
+
+    margin-right: 20px;
+    
+} 
+
+.t1-event time{
+
+    background: #c03b44;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer{
+
+    background: #5e6482;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media(max-width: 768px){
+
+    .container{
+
+        width: 95%;
+
+    }
+
+    header{
+
+        height: 50px;
+    }
+
+    h1{
+
+        font-size: 23px;
+    }
+
+    #timeline{
+
+        background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/line.png?raw=true) repeat-y 30px 0; 
+
+    }
+
+    .t1-year{
+
+        background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-big.png?raw=true) repeat-y 0 0;
+        text-align: left;
+        margin: 0;
+    }
+
+    .t1-event{
+
+       background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/point-small.png?raw=true) no-repeat 16px;
+    }
+
+    .t1-event div{
+
+        width: 85%;
+        position: relative;
+    }
+
+    .t1-event div.event-1{
+
+        float: right;
+        background: url(https://github.com/SUBstylee/CSS-projects/blob/master/05-timeline/img/arrow-left.png?raw=true) no-repeat 0 0;
+    }
+
+    .t1-event div.event-1 div{
+
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+}
